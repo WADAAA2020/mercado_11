@@ -1,0 +1,13 @@
+-- Active: 1701344961693@@127.0.0.1@3306@aulapdo
+CREATE TABLE tb_produtos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome_produto VARCHAR(200),
+    valor FLOAT(4,2),
+    data_validade DATE
+);
+
+INSERT INTO tb_produtos (nome_produto, valor, data_validade) VALUES("Arroz", 22.99, '2025-05,01');
+INSERT INTO tb_produtos (nome_produto, valor, data_validade) VALUES("Coca-Cola", 7.00, '2024-05,01');
+INSERT INTO tb_produtos (nome_produto, valor, data_validade) VALUES("Ovo", 22.99, '2023-05,01');
+
+SELECT * FROM tb_produtos WHERE nome_produto LIKE "%A%";
